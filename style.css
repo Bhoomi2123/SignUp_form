@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background::before{
+    content: '';
+    background-image: url(img2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.25;
+}
+
+.container{
+    display: flex;
+    border: 1px solid black;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: rgb(30, 30, 73);
+}
+
+.form h1{
+    font-size: 3rem;
+    font-family: "Noto Serif", serif;
+    margin: 40px;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 20px 9px rgb(12, 12, 36);
+}
+
+.form p{
+    color: whitesmoke;
+}
+
+.form label{
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.btn{
+    margin: 15px;
+    padding: 7px 50px;
+    border-radius: 15px;
+    background-color: white;
+    color: rgb(18, 18, 75);
+    border-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px 9px rgb(12, 12, 36);
+}
+
+.btn:hover{
+    margin-top: 15px;
+    padding: 7px 60px;
+    background-color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+.form label input{
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 7px;
+    color: rgb(18, 18, 75);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px 9px rgb(12, 12, 36);
+}
+
+.form label input:hover{
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+.image img{
+    width: 401px;
+    height: 500px;
+}
